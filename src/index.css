@@ -1,0 +1,47 @@
+:root {
+  --primary: #ffffff;
+  --primary-alpha-03: rgba(255, 255, 255, 0.03);
+
+  --secondary: #868789;
+
+  --link: #3B486D;
+
+  --dark: #040404;
+  --dark-alpha-8: rgba(4, 4, 4, 0.8);
+
+
+  --transition: 300ms;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, serif;
+  background-color: var(--dark);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  transition: var(--transition);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark);
+}

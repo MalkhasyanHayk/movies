@@ -1,0 +1,15 @@
+.button {
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--secondary);
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--primary);
+}

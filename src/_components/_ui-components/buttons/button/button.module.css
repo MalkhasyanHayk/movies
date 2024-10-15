@@ -1,0 +1,36 @@
+.button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 40px;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .9;
+}
+
+.button * {
+    flex-shrink: 0;
+}
+
+.rounded {
+    border-radius: 500px;
+}
+
+.icon {
+    height: 20px;
+}
+
+.label {
+    color: var(--dark);
+    font-weight: 900;
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+.gradient .label {
+    color: var(--primary);
+}

@@ -1,0 +1,14 @@
+.links {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.buttons {
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+}

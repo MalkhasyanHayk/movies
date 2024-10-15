@@ -1,0 +1,95 @@
+.favoriteSection {
+    width: 100%;
+    background-size: 100% auto;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 200px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category {
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.title {
+    /*color: var(--primary);*/
+    font-size: 72px;
+    font-weight: 900;
+    overflow-wrap: anywhere;
+    text-transform: uppercase;
+    letter-spacing: .48pt;
+    background: url("/assets/rust.avif");
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.releaseYear, .mpaRating, .duration {
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.description {
+    color: var(--primary);
+    line-height: 1.4;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: .48pt;
+    max-width: 700px;
+}
+
+.controllers {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+@media (max-width: 640px) {
+    .favoriteSection {
+        padding: 20px 15px;
+    }
+
+    .controllers {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+    .favoriteSection {
+        padding: 20px 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .favoriteSection {
+        padding: 20px 15px;
+    }
+}

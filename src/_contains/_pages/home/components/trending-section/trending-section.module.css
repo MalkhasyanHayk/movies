@@ -1,0 +1,40 @@
+.trendingSection {
+    width: 100%;
+    margin-top: -150px;
+    /*transform: translateY(-100px);*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 50px;
+}
+
+.trendingSection h2 {
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.item {
+    margin: 0 10px;
+    user-select: none;
+}
+
+@media (max-width: 640px) {
+    .trendingSection {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+    .trendingSection {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .trendingSection {
+        margin-top: 0;
+    }
+}

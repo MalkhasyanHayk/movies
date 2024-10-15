@@ -1,0 +1,23 @@
+.menus {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.menus > div {
+    flex-shrink: 0;
+}
+
+.menus > div:first-child {
+    height: 60px;
+}
+
+.menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

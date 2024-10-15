@@ -1,0 +1,31 @@
+.navigation {
+    height: 100vh;
+    width: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.navigation:hover {
+    width: 350px;
+    background: var(--dark-alpha-8);
+    backdrop-filter: blur(3px);
+    /*box-shadow: 0 10px 50px 100px var(--dark-alpha-8);*/
+}
+
+@media (max-height: 850px) {
+    .navigation {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .navigation::-webkit-scrollbar {
+        width: 0;
+    }
+}

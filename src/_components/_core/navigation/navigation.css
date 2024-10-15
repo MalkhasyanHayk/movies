@@ -1,0 +1,14 @@
+.menuAvatar {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navigation:hover .menuAvatar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navigation:hover button {
+    visibility: visible !important;
+    opacity: 1 !important;
+}

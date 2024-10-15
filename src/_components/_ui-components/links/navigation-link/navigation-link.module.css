@@ -1,0 +1,43 @@
+.navigationLink {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    border-radius: 15px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.navigationLink > * {
+    flex-shrink: 0;
+}
+
+.default {
+    background-color: transparent;
+}
+
+.default:hover {
+    background-color: var(--primary-alpha-03);
+}
+
+.active {
+    background-color: var(--link);
+}
+
+.pending {
+    background-color: var(--secondary);
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    color: var(--primary);
+    font-size: 28px;
+}
